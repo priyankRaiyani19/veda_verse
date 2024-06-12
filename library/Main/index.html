@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Veda-Verse</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://kit.fontawesome.com/10e2ed5086.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<header>
+    <div class="logosec">
+        <i class="fa-solid fa-house-user"></i>
+        <div class="logo">Veda-Verse</div>
+    </div>
+    <div class="searchbar">
+        <input type="text" placeholder="Search for your favourite book">
+        <div class="searchbtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    <div class="notification">
+        <i class="fa-solid fa-bell noti-bell"></i>
+        <div class="dp">
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </div>
+</header>
+<div class="main-container">
+    <div class="navcontainer">
+        <nav class="nav">
+            <a href="#recommanded" style="text-decoration: none">
+                <div class="nav-upper-options">
+                    <div class="nav-option option1">
+                        <i class="fa-brands fa-cc-discover"></i>
+                        <h3> Discover</h3>
+                    </div>
+            </a>
+            <a href="#category" style="text-decoration: none">
+                <div class="option2 nav-option">
+                    <i class="fa-solid fa-bars"></i>
+                    <h3>Category</h3>
+                </div>
+            </a>
+            <div class="nav-option option3">
+                <i class="fa-solid fa-book"></i>
+                <h3> My Library</h3>
+            </div>
+            <div class="nav-option option4">
+                <i class="fa-solid fa-download"></i>
+                <h3>Download</h3>
+            </div>
+            <a href="#Ab">
+                <div class="nav-option option5">
+                    <i class="fa-solid fa-headphones"></i>
+                    <h3>Audio Books</h3>
+                </div>
+            </a>
+            <div class="nav-option option6">
+                <i class="fa-solid fa-heart"></i>
+                <h3> Favourite</h3>
+            </div>
+            <div class="nav-option option7">
+                <i class="fa-solid fa-gear"></i>
+                <h3>Settings</h3>
+            </div>
+            <div class="nav-option option8">
+                <i class="fa-solid fa-message"></i>
+                <h3>Support</h3>
+            </div>
+            <a href="../Login/index.html">
+                <div class="nav-option option9">
+                    <i class="fa-solid fa-right-from-bracket logout"></i>
+                    <h3>Logout</h3>
+                </div>
+            </a>
+    </div>
+    </nav>
+</div>
+<div class="main">
+    <div class="report-container">
+        <div class="report-header" id="recommanded">
+            <h1 class="Recommended">Recommended</h1>
+            <button class="view">See All ></button>
+        </div>
+        <div class="books">
+            <a href="../pdf/unencrypted-geeta.pdf" target="_blank">
+                <div>
+                    <img src="../images/book1.jpg" class="book" alt="" width="200px" height="300px">
+                    <h3>Shreemad <br> BhagvatGeeta </h3>
+                </div>
+            </a>
+            <div>
+                <img src="../images/book2.jpg" class="book" alt="" width="200px" height="300px">
+                <h3>Ramayan</h3>
+            </div>
+            <div>
+                <img src="../images/book3.jpg" class="book" alt="" width="200px" height="300px">
+                <h3>Vachanarmut</h3>
+            </div>
+            <div>
+                <img src="../images/book4.jpg" class="book" alt="" width="200px" height="300px">
+                <h3>Rigveda</h3>
+            </div>
+        </div>
+    </div>
+    <div class="report-container books2">
+        <div class="report-header">
+            <h1 id="category" class="Recommended">Category</h1>
+            <button class="view">See All ></button>
+        </div>
+        <div class="books">
+            <div>
+                <img src="../images/book1.jpg" class="book" alt="" width="200px" height="300px">
+                <h3>Epic</h3>
+            </div>
+            <div>
+                <img src="../images/book4.jpg" class="book" alt="" width="200px" height="300px">
+                <h3>Vedas</h3>
+            </div>
+            <div>
+                <img src="../images/book5.jpg" class="book" alt="" width="200px" height="300px">
+                <h3>Ancient <br> Literature </h3>
+            </div>
+            <div>
+                <img src="../images/book6.jpg" class="book" alt="" width="200px" height="300px">
+                <h3>Stotram</h3>
+            </div>
+        </div>
+    </div>
+    <div class="report-container" id="Ab">
+        <div class="report-header">
+            <h1 class="Recommended">Audio Books</h1>
+            <button class="view">See All ></button>
+        </div>
+        <div class="books">
+            <div>
+                <img src="../images/book1.jpg" class="book" alt="" width="200px" height="300px">
+                <h3>Shreemad <br> BhagvatGeeta </h3>
+                <div class="center-btn">
+                    <button id="playButton1" class="Play-btn">Play Audio</button>
+                    <!--                                <audio id="audioElement" src="vachnamrut.mp3"></audio>-->
+                </div>
+            </div>
+            <div>
+                <img src="../images/book2.jpg" class="book" alt="" width="200px" height="300px">
+                <h3>Ramayan</h3>
+                <div class="center-btn">
+                    <button id="playButton2" class="Play-btn">Play Audio</button>
+                    <!--                            <audio id="audioElement" src="vachnamrut.mp3"></audio>-->
+                </div>
+            </div>
+            <div>
+                <img src="../images/book3.jpg" class="book" alt="" width="200px" height="300px">
+                <h3>Vachanarmut</h3>
+                <div class="center-btn">
+                    <button id="playButton" class="Play-btn">Play Audio</button>
+                    <audio id="audioElement" src="../audio/vachnamrut.mp3"></audio>
+                </div>
+            </div>
+            <div>
+                <img src="../images/book4.jpg" class="book" alt="" width="200px" height="300px">
+                <h3>Rigveda</h3>
+                <div class="center-btn">
+                    <button id="playButton3" class="Play-btn">Play Audio</button>
+                    <!--                        <audio id="audioElement" src="vachnamrut.mp3"></audio>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="Script.js"></script>
+</body>
+</html>
